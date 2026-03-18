@@ -13,9 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Install Python 3.X
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
       - name: Install CI test dependencies
         run: |
           pip install -r .github/requirements-test.txt
